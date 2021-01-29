@@ -41,9 +41,9 @@ jobs:
     - name: Build Firmware
       env:
         #TNAME: NEWIFI-MINI
-        #TNAME: NNEWIFI3
+        TNAME: NNEWIFI3
         #TNAME: RM2100
-        TNAME: XY-C1
+        #TNAME: XY-C1
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
